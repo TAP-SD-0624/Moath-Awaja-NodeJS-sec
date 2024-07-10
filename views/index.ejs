@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Manager</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>File Manager</h1>
+        <ul>
+            <% files.forEach(function(file) { %>
+                <li>
+                    <a href="/files/<%= file %>"><%= file %></a>
+                    <form action="/delete" method="POST" style="display:inline;">
+                        <input type="hidden" name="filename" value="<%= file %>">
+                        <button type="submit">Delete</button>
+                    </form>
+                </li>
+            <% }); %>
+        </ul>
+        <a href="/create">Create New File</a>
+    </div>
+</body>
+</html>

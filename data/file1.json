@@ -1,0 +1,89 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "age": 28,
+      "address": {
+        "street": "123 Maple Street",
+        "city": "Springfield",
+        "state": "IL",
+        "postalCode": "62701"
+      },
+      "phoneNumbers": ["555-1234", "555-5678"]
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "email": "bob.smith@example.com",
+      "age": 34,
+      "address": {
+        "street": "456 Oak Avenue",
+        "city": "Metropolis",
+        "state": "NY",
+        "postalCode": "10001"
+      },
+      "phoneNumbers": ["555-8765", "555-4321"]
+    },
+    {
+      "id": 3,
+      "name": "Carol White",
+      "email": "carol.white@example.com",
+      "age": 22,
+      "address": {
+        "street": "789 Pine Road",
+        "city": "Gotham",
+        "state": "NJ",
+        "postalCode": "07001"
+      },
+      "phoneNumbers": ["555-1122", "555-3344"]
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "name": "Laptop",
+      "category": "Electronics",
+      "price": 999.99,
+      "stock": 50
+    },
+    {
+      "id": 102,
+      "name": "Smartphone",
+      "category": "Electronics",
+      "price": 699.99,
+      "stock": 150
+    },
+    {
+      "id": 103,
+      "name": "Coffee Maker",
+      "category": "Home Appliances",
+      "price": 49.99,
+      "stock": 200
+    }
+  ],
+  "orders": [
+    {
+      "orderId": 5001,
+      "userId": 1,
+      "productIds": [101, 103],
+      "totalAmount": 1049.98,
+      "orderDate": "2024-01-15"
+    },
+    {
+      "orderId": 5002,
+      "userId": 2,
+      "productIds": [102],
+      "totalAmount": 699.99,
+      "orderDate": "2024-02-20"
+    },
+    {
+      "orderId": 5003,
+      "userId": 3,
+      "productIds": [101, 102, 103],
+      "totalAmount": 1749.97,
+      "orderDate": "2024-03-05"
+    }
+  ]
+}

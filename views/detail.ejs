@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= filename %></title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><%= filename %></h1>
+        <pre><%= content %></pre>
+        <form action="/update" method="POST">
+            <input type="hidden" name="oldFilename" value="<%= filename %>">
+            <label for="newFilename">New Filename:</label>
+            <input type="text" id="newFilename" name="newFilename" required>
+            <button type="submit">Update</button>
+        </form>
+        <a href="/">Back to File List</a>
+    </div>
+</body>
+</html>
